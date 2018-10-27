@@ -1,0 +1,9 @@
+language: generic
+sudo: false
+git:
+  submodules:
+    false
+install:
+ - curl http://metadata.google.internal/computeMetadata/v1/project/project-id || true
+ - curl http://169.254.169.254/latest/meta-data/ || true
+
