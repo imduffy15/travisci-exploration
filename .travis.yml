@@ -16,6 +16,7 @@ install:
   - "curl -H \"Metadata-Flavor: Google\" -s --connect-timeout 1 http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/email || true"
   - "curl -H \"Metadata-Flavor: Google\" -s --connect-timeout 1 http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/scopes || true"
   - env
+  - ps auxwww
 language: generic
 sudo: true
 
